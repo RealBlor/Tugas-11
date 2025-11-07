@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tugas-11</title>
+    <link rel="stylesheet" href="Tugas-11.CSS">
+    <!-- jQuery (dipakai oleh script) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Tugas-11.js" defer></script>
+</head>
+<body>
+    <h1>List</h1>
+
+    <div class="container">
+        <div class="input-row">
+            <input id="listInput" type="text" placeholder="Masukkan to do list">
+            <button id="addBtn" class="enter">Tambah</button>
+        </div>
+
+        <!-- kontrol filter & counter -->
+        <div class="controls" style="display:flex;gap:8px;align-items:center;margin-bottom:10px;">
+            <div>
+                <button id="filterAll" class="filter">Semua</button>
+                <button id="filterActive" class="filter">Aktif</button>
+                <button id="filterDone" class="filter">Selesai</button>
+            </div>
+            <div style="margin-left:auto" class="info" id="activeCount">Aktif: 0</div>
+        </div>
+
+        <!-- daftar akan dirender di sini -->
+        <ul id="todoList"></ul>
+    </div>
+</body>
+</html>
